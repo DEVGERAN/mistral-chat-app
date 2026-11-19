@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mistral Chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="chat">
+      <h1>Mistral Chat <span class="model">mistral-small-latest</span></h1>
+      <div id="messages" class="messages" aria-live="polite"></div>
+      <form id="composer" class="composer">
+        <textarea
+          id="input"
+          rows="2"
+          placeholder="Écrivez votre message… (Entrée pour envoyer, Maj+Entrée pour un saut de ligne)"
+          required
+        ></textarea>
+        <button type="submit" id="send">Envoyer</button>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
